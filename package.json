@@ -25,5 +25,9 @@
       "client": "client/main.jsx",
       "server": "server/main.js"
     }
+  },
+  "devDependencies": {
+    "eslint": "^8.24.0",
+    "eslint-plugin-react": "^7.31.8"
   }
 }

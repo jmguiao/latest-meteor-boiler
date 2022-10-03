@@ -9,12 +9,12 @@ Meteor.startup(() => {
 	Server.registerFunctions()
 	Server.initServer()
 
-	if (!Meteor.users.findOne()) {
-		Accounts.createUser({
-			username: Meteor.settings.user.username,
-			email: Meteor.settings.user.email,
-			password: Meteor.settings.user.password,
-			profile: Meteor.settings.user.profile,
-		})
-	}
+	// if (!Meteor.users.findOne()) {
+	// 	Accounts.createUser({
+	// 		username: Meteor.settings.user.username,
+	// 		email: Meteor.settings.user.email,
+	// 		password: Meteor.settings.user.password,
+	// 		profile: Meteor.settings.user.profile,
+	// 	})
+	// }
 })
