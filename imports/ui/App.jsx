@@ -11,13 +11,13 @@ class App extends React.Component {
 
 
 	render() {
-		console.log(Util.isUrl('https://localhost:3000/'))
+
 		AppW.initiateWatch("UNIQUEID")
-		const word = AppW.Word
+	
 		return (
 			<div>
 				<input onChange={(e) => AppW.setWord(e.target.value)} />
-				{word}
+			
 				<button onClick={() => AppW.save("123", "ONE")}>Refresh</button>
 			</div>
 		)
